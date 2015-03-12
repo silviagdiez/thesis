@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<!DOCTYPE sonic-visualiser>
+		<sv>
+		<data>
+		<model id="2" name="" sampleRate="44100" start="0" end="0" type="sparse" dimensions="3" resolution="1" notifyOnAdd="true" dataset="1"  subtype="note" valueQuantization="0" minimum="0" maximum="69" units=""/>
+		<dataset id="1" dimensions="3">
+				<point frame="4057905" value="36" duration="128287" level="0.3" label=" " />
+				<point frame="4057905" value="60" duration="128287" level="0.3" label=" " />
+				<point frame="4057905" value="64" duration="128287" level="0.3" label=" " />
+				<point frame="4057905" value="67" duration="128287" level="0.3" label=" " />
+				<point frame="4186192" value="45" duration="159642" level="0.3" label=" " />
+				<point frame="4186192" value="61" duration="159642" level="0.3" label=" " />
+				<point frame="4186192" value="64" duration="159642" level="0.3" label=" " />
+				<point frame="4186192" value="69" duration="159642" level="0.3" label=" " />
+				<point frame="4345834" value="38" duration="34663" level="0.3" label=" " />
+				<point frame="4345834" value="62" duration="34663" level="0.3" label=" " />
+				<point frame="4345834" value="66" duration="34663" level="0.3" label=" " />
+				<point frame="4345834" value="69" duration="34663" level="0.3" label=" " />
+				<point frame="4380497" value="45" duration="65709" level="0.3" label=" " />
+				<point frame="4380497" value="61" duration="65709" level="0.3" label=" " />
+				<point frame="4380497" value="64" duration="65709" level="0.3" label=" " />
+				<point frame="4380497" value="69" duration="65709" level="0.3" label=" " />
+				<point frame="4446206" value="38" duration="67120" level="0.3" label=" " />
+				<point frame="4446206" value="62" duration="67120" level="0.3" label=" " />
+				<point frame="4446206" value="66" duration="67120" level="0.3" label=" " />
+				<point frame="4446206" value="69" duration="67120" level="0.3" label=" " />
+				<point frame="4513326" value="45" duration="97725" level="0.3" label=" " />
+				<point frame="4513326" value="61" duration="97725" level="0.3" label=" " />
+				<point frame="4513326" value="64" duration="97725" level="0.3" label=" " />
+				<point frame="4513326" value="69" duration="97725" level="0.3" label=" " />
+				<point frame="4611051" value="45" duration="30077" level="0.3" label=" " />
+				<point frame="4611051" value="62" duration="30077" level="0.3" label=" " />
+				<point frame="4611051" value="64" duration="30077" level="0.3" label=" " />
+				<point frame="4611051" value="69" duration="30077" level="0.3" label=" " />
+				<point frame="4641128" value="38" duration="62886" level="0.3" label=" " />
+				<point frame="4641128" value="62" duration="62886" level="0.3" label=" " />
+				<point frame="4641128" value="66" duration="62886" level="0.3" label=" " />
+				<point frame="4641128" value="69" duration="62886" level="0.3" label=" " />
+				<point frame="4704014" value="45" duration="99137" level="0.3" label=" " />
+				<point frame="4704014" value="61" duration="99137" level="0.3" label=" " />
+				<point frame="4704014" value="64" duration="99137" level="0.3" label=" " />
+				<point frame="4704014" value="69" duration="99137" level="0.3" label=" " />
+				<point frame="4803151" value="45" duration="31532" level="0.3" label=" " />
+				<point frame="4803151" value="62" duration="31532" level="0.3" label=" " />
+				<point frame="4803151" value="64" duration="31532" level="0.3" label=" " />
+				<point frame="4803151" value="69" duration="31532" level="0.3" label=" " />
+				<point frame="4834683" value="45" duration="507679" level="0.3" label=" " />
+				<point frame="4834683" value="61" duration="507679" level="0.3" label=" " />
+				<point frame="4834683" value="64" duration="507679" level="0.3" label=" " />
+				<point frame="4834683" value="69" duration="507679" level="0.3" label=" " /></dataset>       </data>        <display>            <layer id="3" type="notes" name="Notes" model="2"  verticalScale="0" scaleMinimum="0" scaleMaximum="0"  colourName="Red" colour="#800000" darkBackground="false" />        </display>    </sv>

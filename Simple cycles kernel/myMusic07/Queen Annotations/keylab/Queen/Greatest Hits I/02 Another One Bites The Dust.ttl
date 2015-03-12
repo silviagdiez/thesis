@@ -1,0 +1,79 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.276S"^^xsd:duration ;
+        tl:onTimeLine :timeline_7ab811181f9e ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.276S"^^xsd:duration ;
+        tl:duration "PT3M34.043S"^^xsd:duration ;
+        tl:onTimeLine :timeline_7ab811181f9e ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E:minor" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT3M34.319S"^^xsd:duration ;
+        tl:duration "PT2.588S"^^xsd:duration ;
+        tl:onTimeLine :timeline_7ab811181f9e ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_183225702b41
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_626ba8203ba1
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_ab627f383901 ;
+    a mo:Record ;
+    foaf:maker :maker_183225702b41 .
+
+:timeline_7ab811181f9e
+    a tl:Timeline .
+
+:track_ab627f383901
+    dc:title "Another One Bites The Dust" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/02%20Another%20One%20Bites%20The%20Dust.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_183225702b41 .
+
+<file:Queen/Greatest%20Hits%20I/02%20Another%20One%20Bites%20The%20Dust.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_7ab811181f9e ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

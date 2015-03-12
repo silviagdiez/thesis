@@ -1,0 +1,136 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_41a5c0c30a83
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_e0f3c40b1593
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_396424048f4f ;
+    a mo:Record ;
+    foaf:maker :maker_41a5c0c30a83 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.055S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.055S"^^xsd:duration ;
+        tl:duration "PT37.648S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT37.703S"^^xsd:duration ;
+        tl:duration "PT33.148S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "versea" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M10.851S"^^xsd:duration ;
+        tl:duration "PT32.234S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "versea" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M43.085S"^^xsd:duration ;
+        tl:duration "PT44.229S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT2M27.314S"^^xsd:duration ;
+        tl:duration "PT41.76S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verseb" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT3M9.074S"^^xsd:duration ;
+        tl:duration "PT45.745S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT3M54.819S"^^xsd:duration ;
+        tl:duration "PT28.776S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT4M23.595S"^^xsd:duration ;
+        tl:duration "PT1.845S"^^xsd:duration ;
+        tl:onTimeLine :timeline_fb978278cada ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_fb978278cada
+    a tl:Timeline .
+
+:track_396424048f4f
+    dc:title "Barcelona" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/03%20Barcelona.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_41a5c0c30a83 .
+
+<file:Queen/Greatest%20Hits%20III/03%20Barcelona.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_fb978278cada ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

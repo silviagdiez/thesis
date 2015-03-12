@@ -1,0 +1,109 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT1.759S"^^xsd:duration ;
+        tl:onTimeLine :timeline_01ba44796bfe ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT1.759S"^^xsd:duration ;
+        tl:duration "PT15.452S"^^xsd:duration ;
+        tl:onTimeLine :timeline_01ba44796bfe ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "N" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT17.211S"^^xsd:duration ;
+        tl:duration "PT1M27.752S"^^xsd:duration ;
+        tl:onTimeLine :timeline_01ba44796bfe ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT1M44.963S"^^xsd:duration ;
+        tl:duration "PT25.185S"^^xsd:duration ;
+        tl:onTimeLine :timeline_01ba44796bfe ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT2M10.148S"^^xsd:duration ;
+        tl:duration "PT1M20.595S"^^xsd:duration ;
+        tl:onTimeLine :timeline_01ba44796bfe ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT3M30.743S"^^xsd:duration ;
+        tl:duration "PT2.564S"^^xsd:duration ;
+        tl:onTimeLine :timeline_01ba44796bfe ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_5ed177b5eca9
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_1cd92324606a
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_00e48af644f9 ;
+    a mo:Record ;
+    foaf:maker :maker_5ed177b5eca9 .
+
+:timeline_01ba44796bfe
+    a tl:Timeline .
+
+:track_00e48af644f9
+    dc:title "Play The Game" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/13%20Play%20The%20Game.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_5ed177b5eca9 .
+
+<file:Queen/Greatest%20Hits%20I/13%20Play%20The%20Game.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_01ba44796bfe ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

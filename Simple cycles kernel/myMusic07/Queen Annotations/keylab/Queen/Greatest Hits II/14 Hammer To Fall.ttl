@@ -1,0 +1,79 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.447S"^^xsd:duration ;
+        tl:onTimeLine :timeline_70c9868c23bb ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.447S"^^xsd:duration ;
+        tl:duration "PT3M37.539S"^^xsd:duration ;
+        tl:onTimeLine :timeline_70c9868c23bb ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "A" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT3M37.986S"^^xsd:duration ;
+        tl:duration "PT2.521S"^^xsd:duration ;
+        tl:onTimeLine :timeline_70c9868c23bb ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_e9c2112d80df
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_3a68f729fc0b
+    dc:title "Greatest Hits II" ;
+    mo:release_type mo:album ;
+    mo:track :track_de0762783f07 ;
+    a mo:Record ;
+    foaf:maker :maker_e9c2112d80df .
+
+:timeline_70c9868c23bb
+    a tl:Timeline .
+
+:track_de0762783f07
+    dc:title "Hammer To Fall" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20II/14%20Hammer%20To%20Fall.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_e9c2112d80df .
+
+<file:Queen/Greatest%20Hits%20II/14%20Hammer%20To%20Fall.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_70c9868c23bb ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

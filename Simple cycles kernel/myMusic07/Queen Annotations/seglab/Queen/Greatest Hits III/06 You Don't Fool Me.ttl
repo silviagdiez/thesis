@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_58c618d59125
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_fa2d30ea0031
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_d74d26ba4eb5 ;
+    a mo:Record ;
+    foaf:maker :maker_58c618d59125 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.2S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.2S"^^xsd:duration ;
+        tl:duration "PT1M16.786S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT1M16.986S"^^xsd:duration ;
+        tl:duration "PT15.743S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M32.729S"^^xsd:duration ;
+        tl:duration "PT15.724S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M48.453S"^^xsd:duration ;
+        tl:duration "PT15.748S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT2M4.201S"^^xsd:duration ;
+        tl:duration "PT15.732S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M19.933S"^^xsd:duration ;
+        tl:duration "PT55.116S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental_solo" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT3M15.049S"^^xsd:duration ;
+        tl:duration "PT15.759S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT3M30.808S"^^xsd:duration ;
+        tl:duration "PT15.704S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "ad_lib" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT3M46.512S"^^xsd:duration ;
+        tl:duration "PT1M36.048S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT5M22.56S"^^xsd:duration ;
+        tl:duration "PT0.107S"^^xsd:duration ;
+        tl:onTimeLine :timeline_08293354fa3e ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_08293354fa3e
+    a tl:Timeline .
+
+:track_d74d26ba4eb5
+    dc:title "You Don't Fool Me" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/06%20You%20Don't%20Fool%20Me.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_58c618d59125 .
+
+<file:Queen/Greatest%20Hits%20III/06%20You%20Don't%20Fool%20Me.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_08293354fa3e ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

@@ -1,0 +1,156 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_940b2d145f73
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_ae62b4f5e5b9
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_4518d136224d ;
+    a mo:Record ;
+    foaf:maker :maker_940b2d145f73 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.28S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.28S"^^xsd:duration ;
+        tl:duration "PT11.295S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT11.575S"^^xsd:duration ;
+        tl:duration "PT17.833S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT29.408S"^^xsd:duration ;
+        tl:duration "PT12.016S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT41.424S"^^xsd:duration ;
+        tl:duration "PT18.554S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT59.978S"^^xsd:duration ;
+        tl:duration "PT8.638S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M8.616S"^^xsd:duration ;
+        tl:duration "PT19.547S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M28.163S"^^xsd:duration ;
+        tl:duration "PT18.364S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT1M46.527S"^^xsd:duration ;
+        tl:duration "PT31.079S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M17.606S"^^xsd:duration ;
+        tl:duration "PT28.389S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M45.995S"^^xsd:duration ;
+        tl:duration "PT2.432S"^^xsd:duration ;
+        tl:onTimeLine :timeline_b9126ffd5b86 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_b9126ffd5b86
+    a tl:Timeline .
+
+:track_4518d136224d
+    dc:title "Flash" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/14%20Flash.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_940b2d145f73 .
+
+<file:Queen/Greatest%20Hits%20I/14%20Flash.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_b9126ffd5b86 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

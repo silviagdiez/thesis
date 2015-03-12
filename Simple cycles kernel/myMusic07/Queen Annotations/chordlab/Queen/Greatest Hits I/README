@@ -1,0 +1,6 @@
+Para extraer los acordes:
+1) cut -f 3 File.lab > File.txt
+2) Anadir el file.txt a la lista en unifyChords.py
+3) ./unifyChords > chords
+4) 1,$ s/ //g Para eliminar espacios
+5) 1,$ s/N,//g Para eliminar characteres nulos

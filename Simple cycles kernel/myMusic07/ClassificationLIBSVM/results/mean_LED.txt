@@ -1,0 +1,4 @@
+# Created by Octave 3.0.3, Sun May 08 22:59:14 2011 CEST <silvia@silvia-3.local>
+# name: m
+# type: scalar
+68.58620689655172

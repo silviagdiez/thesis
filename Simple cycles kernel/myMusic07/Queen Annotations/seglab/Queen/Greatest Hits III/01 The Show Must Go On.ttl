@@ -1,0 +1,179 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_8785d8f5e4c3
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_3e7fe0e3bbac
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_e680b29f88b3 ;
+    a mo:Record ;
+    foaf:maker :maker_8785d8f5e4c3 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT1.575S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT1.575S"^^xsd:duration ;
+        tl:duration "PT24.41S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT25.985S"^^xsd:duration ;
+        tl:duration "PT40.213S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M6.198S"^^xsd:duration ;
+        tl:duration "PT23.667S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M29.865S"^^xsd:duration ;
+        tl:duration "PT2.98S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M32.845S"^^xsd:duration ;
+        tl:duration "PT44.541S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M17.386S"^^xsd:duration ;
+        tl:duration "PT20.933S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M38.319S"^^xsd:duration ;
+        tl:duration "PT20.835S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental_solo" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M59.154S"^^xsd:duration ;
+        tl:duration "PT17.366S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT3M16.52S"^^xsd:duration ;
+        tl:duration "PT20.898S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT3M37.418S"^^xsd:duration ;
+        tl:duration "PT28.165S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain_(with_instrumental_solo)" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT4M5.583S"^^xsd:duration ;
+        tl:duration "PT29.122S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT4M34.705S"^^xsd:duration ;
+        tl:duration "PT0.655S"^^xsd:duration ;
+        tl:onTimeLine :timeline_d8a532c2a47f ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_d8a532c2a47f
+    a tl:Timeline .
+
+:track_e680b29f88b3
+    dc:title "The Show Must Go On" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/01%20The%20Show%20Must%20Go%20On.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_8785d8f5e4c3 .
+
+<file:Queen/Greatest%20Hits%20III/01%20The%20Show%20Must%20Go%20On.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_d8a532c2a47f ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

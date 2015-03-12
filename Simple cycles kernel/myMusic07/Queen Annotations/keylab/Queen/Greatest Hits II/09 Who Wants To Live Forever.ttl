@@ -1,0 +1,139 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.381S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.381S"^^xsd:duration ;
+        tl:duration "PT23.975S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E:minor" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT24.356S"^^xsd:duration ;
+        tl:duration "PT33.804S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "G" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT58.16S"^^xsd:duration ;
+        tl:duration "PT13.61S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E:minor" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT1M11.77S"^^xsd:duration ;
+        tl:duration "PT50.798S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "G" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT2M2.568S"^^xsd:duration ;
+        tl:duration "PT47.455S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E:minor" .
+
+:key_000007
+    event:time [
+        tl:beginsAt "PT2M50.023S"^^xsd:duration ;
+        tl:duration "PT51.051S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "G" .
+
+:key_000008
+    event:time [
+        tl:beginsAt "PT3M41.074S"^^xsd:duration ;
+        tl:duration "PT1M12.767S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "E:minor" .
+
+:key_000009
+    event:time [
+        tl:beginsAt "PT4M53.841S"^^xsd:duration ;
+        tl:duration "PT3.426S"^^xsd:duration ;
+        tl:onTimeLine :timeline_572f6ac42d35 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_815bc2dbb6f2
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_2d133f04e0f0
+    dc:title "Greatest Hits II" ;
+    mo:release_type mo:album ;
+    mo:track :track_78a13a998e38 ;
+    a mo:Record ;
+    foaf:maker :maker_815bc2dbb6f2 .
+
+:timeline_572f6ac42d35
+    a tl:Timeline .
+
+:track_78a13a998e38
+    dc:title "Who Wants To Live Forever" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20II/09%20Who%20Wants%20To%20Live%20Forever.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_815bc2dbb6f2 .
+
+<file:Queen/Greatest%20Hits%20II/09%20Who%20Wants%20To%20Live%20Forever.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_572f6ac42d35 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_4fc27aef483b
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_bd024acdc8ad
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_3101198260d5 ;
+    a mo:Record ;
+    foaf:maker :maker_4fc27aef483b .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.06S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.06S"^^xsd:duration ;
+        tl:duration "PT52.813S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT52.873S"^^xsd:duration ;
+        tl:duration "PT24.014S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M16.887S"^^xsd:duration ;
+        tl:duration "PT15.965S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M32.852S"^^xsd:duration ;
+        tl:duration "PT11.972S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M44.824S"^^xsd:duration ;
+        tl:duration "PT23.942S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M8.766S"^^xsd:duration ;
+        tl:duration "PT16.06S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M24.826S"^^xsd:duration ;
+        tl:duration "PT31.948S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "section_y" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M56.774S"^^xsd:duration ;
+        tl:duration "PT16.068S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "section_z" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT3M12.842S"^^xsd:duration ;
+        tl:duration "PT54.793S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT4M7.635S"^^xsd:duration ;
+        tl:duration "PT1.032S"^^xsd:duration ;
+        tl:onTimeLine :timeline_9320616d10e9 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_9320616d10e9
+    a tl:Timeline .
+
+:track_3101198260d5
+    dc:title "Under Pressure" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/02%20Under%20Pressure.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_4fc27aef483b .
+
+<file:Queen/Greatest%20Hits%20III/02%20Under%20Pressure.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_9320616d10e9 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

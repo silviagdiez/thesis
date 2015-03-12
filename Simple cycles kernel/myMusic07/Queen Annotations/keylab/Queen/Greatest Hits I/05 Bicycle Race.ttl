@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.594S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.594S"^^xsd:duration ;
+        tl:duration "PT22.559S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT23.153S"^^xsd:duration ;
+        tl:duration "PT17.467S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Bb:minor" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT40.62S"^^xsd:duration ;
+        tl:duration "PT20.272S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT1M0.892S"^^xsd:duration ;
+        tl:duration "PT35.903S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT1M36.795S"^^xsd:duration ;
+        tl:duration "PT4.31S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000007
+    event:time [
+        tl:beginsAt "PT1M41.105S"^^xsd:duration ;
+        tl:duration "PT21.531S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "C" .
+
+:key_000008
+    event:time [
+        tl:beginsAt "PT2M2.636S"^^xsd:duration ;
+        tl:duration "PT15.446S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "D" .
+
+:key_000009
+    event:time [
+        tl:beginsAt "PT2M18.082S"^^xsd:duration ;
+        tl:duration "PT17.175S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Bb:minor" .
+
+:key_000010
+    event:time [
+        tl:beginsAt "PT2M35.257S"^^xsd:duration ;
+        tl:duration "PT24.577S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000011
+    event:time [
+        tl:beginsAt "PT2M59.834S"^^xsd:duration ;
+        tl:duration "PT3.966S"^^xsd:duration ;
+        tl:onTimeLine :timeline_11f1301eed84 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_0f02d27cd3ec
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_bd90250d9a1f
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_5318d036bb27 ;
+    a mo:Record ;
+    foaf:maker :maker_0f02d27cd3ec .
+
+:timeline_11f1301eed84
+    a tl:Timeline .
+
+:track_5318d036bb27
+    dc:title "Bicycle Race" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/05%20Bicycle%20Race.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_0f02d27cd3ec .
+
+<file:Queen/Greatest%20Hits%20I/05%20Bicycle%20Race.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_11f1301eed84 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

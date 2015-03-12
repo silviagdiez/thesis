@@ -1,0 +1,176 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_96607adf18ce
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_cef5eedc98f4
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_31b3f564788c ;
+    a mo:Record ;
+    foaf:maker :maker_96607adf18ce .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT1.495S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT1.495S"^^xsd:duration ;
+        tl:duration "PT24.156S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT25.651S"^^xsd:duration ;
+        tl:duration "PT34.849S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M0.5S"^^xsd:duration ;
+        tl:duration "PT17.427S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M17.927S"^^xsd:duration ;
+        tl:duration "PT8.705S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M26.632S"^^xsd:duration ;
+        tl:duration "PT34.853S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M1.485S"^^xsd:duration ;
+        tl:duration "PT34.833S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M36.318S"^^xsd:duration ;
+        tl:duration "PT13.053S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "ad_lib" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M49.371S"^^xsd:duration ;
+        tl:duration "PT8.703S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M58.074S"^^xsd:duration ;
+        tl:duration "PT17.419S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental_solo" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT3M15.493S"^^xsd:duration ;
+        tl:duration "PT26.136S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT3M41.629S"^^xsd:duration ;
+        tl:duration "PT55.971S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT4M37.6S"^^xsd:duration ;
+        tl:duration "PT0S"^^xsd:duration ;
+        tl:onTimeLine :timeline_e4dca7891a78 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_e4dca7891a78
+    a tl:Timeline .
+
+:track_31b3f564788c
+    dc:title "Heaven For Everyone" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/07%20Heaven%20For%20Everyone.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_96607adf18ce .
+
+<file:Queen/Greatest%20Hits%20III/07%20Heaven%20For%20Everyone.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_e4dca7891a78 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

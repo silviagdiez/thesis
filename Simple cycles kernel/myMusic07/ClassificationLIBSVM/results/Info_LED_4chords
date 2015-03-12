@@ -1,0 +1,29 @@
+# Created by Octave 3.0.3, Sun May 08 22:59:14 2011 CEST <silvia@silvia-3.local>
+# name: info
+# type: cell
+# rows: 1
+# columns: 4
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 11
+08-May-2011
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 72
+/Users/silvia/Documents/workspace/MyMusic03/ClassificationLIBSVM/results
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 5
+22:59
+
+# name: <cell-element>
+# type: string
+# elements: 1
+# length: 32
+Elapsed time: 138.70016312599182
+

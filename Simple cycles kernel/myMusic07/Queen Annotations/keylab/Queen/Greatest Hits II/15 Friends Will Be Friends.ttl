@@ -1,0 +1,99 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.415S"^^xsd:duration ;
+        tl:onTimeLine :timeline_54db3bcd29da ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.415S"^^xsd:duration ;
+        tl:duration "PT1M57.982S"^^xsd:duration ;
+        tl:onTimeLine :timeline_54db3bcd29da ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "G" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT1M58.397S"^^xsd:duration ;
+        tl:duration "PT11.617S"^^xsd:duration ;
+        tl:onTimeLine :timeline_54db3bcd29da ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "F" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT2M10.014S"^^xsd:duration ;
+        tl:duration "PT1M55.345S"^^xsd:duration ;
+        tl:onTimeLine :timeline_54db3bcd29da ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "G" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT4M5.359S"^^xsd:duration ;
+        tl:duration "PT3.534S"^^xsd:duration ;
+        tl:onTimeLine :timeline_54db3bcd29da ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_40f11f2079e0
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_ec1133c79f20
+    dc:title "Greatest Hits II" ;
+    mo:release_type mo:album ;
+    mo:track :track_d6b742cdfa4f ;
+    a mo:Record ;
+    foaf:maker :maker_40f11f2079e0 .
+
+:timeline_54db3bcd29da
+    a tl:Timeline .
+
+:track_d6b742cdfa4f
+    dc:title "Friends Will Be Friends" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20II/15%20Friends%20Will%20Be%20Friends.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_40f11f2079e0 .
+
+<file:Queen/Greatest%20Hits%20II/15%20Friends%20Will%20Be%20Friends.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_54db3bcd29da ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

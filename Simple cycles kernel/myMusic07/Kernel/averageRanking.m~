@@ -1,0 +1,23 @@
+function ar = averageRanking(res,myclass)
+%=== This function computes the average ranking
+% of a list of songs
+%============================================
+
+%=== We first sort the class vector ===
+[a,b] = sort(myclass);
+myclass = a;
+res = res(b,b);
+
+%=== We plot the graph ===
+%imagesc(res);
+
+%=== We compute the average ranking ===
+for i=1:1%length(myclass)
+    aux = res(i,:)
+    [a,b] = sort(aux,'descend')
+    c1 = myclass(
+    myclass
+end
+
+
+return

@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_0c117acafa48
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_96b4c9a9427a
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_cf17a31fa7fd ;
+    a mo:Record ;
+    foaf:maker :maker_0c117acafa48 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.245S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.245S"^^xsd:duration ;
+        tl:duration "PT3.179S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT3.424S"^^xsd:duration ;
+        tl:duration "PT24.329S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT27.753S"^^xsd:duration ;
+        tl:duration "PT24.403S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT52.156S"^^xsd:duration ;
+        tl:duration "PT23.695S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M15.851S"^^xsd:duration ;
+        tl:duration "PT24.535S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M40.386S"^^xsd:duration ;
+        tl:duration "PT21.618S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse_(instrumental)" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M2.004S"^^xsd:duration ;
+        tl:duration "PT15.264S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M17.268S"^^xsd:duration ;
+        tl:duration "PT24.146S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M41.414S"^^xsd:duration ;
+        tl:duration "PT18.011S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M59.425S"^^xsd:duration ;
+        tl:duration "PT2.575S"^^xsd:duration ;
+        tl:onTimeLine :timeline_90af648701c6 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_90af648701c6
+    a tl:Timeline .
+
+:track_cf17a31fa7fd
+    dc:title "Killer Queen" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/03%20Killer%20Queen.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_0c117acafa48 .
+
+<file:Queen/Greatest%20Hits%20I/03%20Killer%20Queen.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_90af648701c6 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

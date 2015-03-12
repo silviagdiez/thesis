@@ -1,0 +1,99 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.739S"^^xsd:duration ;
+        tl:onTimeLine :timeline_476fa41555bd ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.739S"^^xsd:duration ;
+        tl:duration "PT1M37.721S"^^xsd:duration ;
+        tl:onTimeLine :timeline_476fa41555bd ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT1M38.46S"^^xsd:duration ;
+        tl:duration "PT13.25S"^^xsd:duration ;
+        tl:onTimeLine :timeline_476fa41555bd ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Db" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT1M51.71S"^^xsd:duration ;
+        tl:duration "PT3M3.757S"^^xsd:duration ;
+        tl:onTimeLine :timeline_476fa41555bd ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Ab" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT4M55.467S"^^xsd:duration ;
+        tl:duration "PT2.2S"^^xsd:duration ;
+        tl:onTimeLine :timeline_476fa41555bd ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_f2c06b1c9ae0
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_4dd5d7d95cf0
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_c7581acd9dea ;
+    a mo:Record ;
+    foaf:maker :maker_f2c06b1c9ae0 .
+
+:timeline_476fa41555bd
+    a tl:Timeline .
+
+:track_c7581acd9dea
+    dc:title "Somebody To Love" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/10%20Somebody%20To%20Love.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_f2c06b1c9ae0 .
+
+<file:Queen/Greatest%20Hits%20I/10%20Somebody%20To%20Love.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_476fa41555bd ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

@@ -1,0 +1,149 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_37f8f24212bb
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_a0417ea57a60
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_04f7136c05cf ;
+    a mo:Record ;
+    foaf:maker :maker_37f8f24212bb .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.28S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.28S"^^xsd:duration ;
+        tl:duration "PT6.175S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT6.455S"^^xsd:duration ;
+        tl:duration "PT18.622S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT25.077S"^^xsd:duration ;
+        tl:duration "PT18.812S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT43.889S"^^xsd:duration ;
+        tl:duration "PT18.516S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M2.405S"^^xsd:duration ;
+        tl:duration "PT18.697S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M21.102S"^^xsd:duration ;
+        tl:duration "PT18.635S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental_solo" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M39.737S"^^xsd:duration ;
+        tl:duration "PT18.706S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "break" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT1M58.443S"^^xsd:duration ;
+        tl:duration "PT43.337S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M41.78S"^^xsd:duration ;
+        tl:duration "PT2.047S"^^xsd:duration ;
+        tl:onTimeLine :timeline_993d1f821a03 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_993d1f821a03
+    a tl:Timeline .
+
+:track_04f7136c05cf
+    dc:title "Crazy Little Thing Called Love" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/09%20Crazy%20Little%20Thing%20Called%20Love.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_37f8f24212bb .
+
+<file:Queen/Greatest%20Hits%20I/09%20Crazy%20Little%20Thing%20Called%20Love.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_993d1f821a03 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

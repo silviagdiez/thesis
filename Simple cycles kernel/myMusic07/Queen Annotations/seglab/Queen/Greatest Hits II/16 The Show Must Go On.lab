@@ -1,0 +1,12 @@
+0.000	0.170		silence
+0.170	20.258		intro
+20.258	60.155		verse
+60.155	80.179		refrain
+80.179	85.887		break
+85.887	128.707		verse
+128.707	148.756		refrain
+148.756	168.734		instrumental_solo
+168.734	185.848		bridge
+185.848	205.882		refrain
+205.882	258.785		outro
+258.785	263.640		silence

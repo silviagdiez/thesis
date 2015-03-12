@@ -1,0 +1,13 @@
+0.000	0.255		silence
+0.255	7.436		intro
+7.436	49.441		refrain
+49.441	75.151		verse
+75.151	96.723		bridge
+96.723	122.378		verse
+122.378	144.332		bridge
+144.332	169.944		instrumental_solo
+169.944	180.660		half_bridge
+180.660	194.816		half_refrain
+194.816	207.372		half_verse
+207.372	251.800		silence
+251.800	255.240		new_point

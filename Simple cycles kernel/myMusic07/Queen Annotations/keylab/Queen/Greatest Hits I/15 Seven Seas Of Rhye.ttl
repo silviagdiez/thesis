@@ -1,0 +1,109 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.8" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:key_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.267S"^^xsd:duration ;
+        tl:onTimeLine :timeline_af1cf8d057b2 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:key_000002
+    event:time [
+        tl:beginsAt "PT0.267S"^^xsd:duration ;
+        tl:duration "PT1M18.063S"^^xsd:duration ;
+        tl:onTimeLine :timeline_af1cf8d057b2 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "D" .
+
+:key_000003
+    event:time [
+        tl:beginsAt "PT1M18.33S"^^xsd:duration ;
+        tl:duration "PT11.344S"^^xsd:duration ;
+        tl:onTimeLine :timeline_af1cf8d057b2 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Bb" .
+
+:key_000004
+    event:time [
+        tl:beginsAt "PT1M29.674S"^^xsd:duration ;
+        tl:duration "PT23.003S"^^xsd:duration ;
+        tl:onTimeLine :timeline_af1cf8d057b2 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "G" .
+
+:key_000005
+    event:time [
+        tl:beginsAt "PT1M52.677S"^^xsd:duration ;
+        tl:duration "PT54.443S"^^xsd:duration ;
+        tl:onTimeLine :timeline_af1cf8d057b2 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "D" .
+
+:key_000006
+    event:time [
+        tl:beginsAt "PT2M47.12S"^^xsd:duration ;
+        tl:duration "PT3.347S"^^xsd:duration ;
+        tl:onTimeLine :timeline_af1cf8d057b2 ;
+        a tl:Interval
+    ] ;
+    a af:KeySegment ;
+    rdfs:label "Silence" .
+
+:maker_1d5e6509ede9
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_94368924a5a1
+    dc:title "Greatest Hits I" ;
+    mo:release_type mo:album ;
+    mo:track :track_7ccfe367f56f ;
+    a mo:Record ;
+    foaf:maker :maker_1d5e6509ede9 .
+
+:timeline_af1cf8d057b2
+    a tl:Timeline .
+
+:track_7ccfe367f56f
+    dc:title "Seven Seas Of Rhye" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20I/15%20Seven%20Seas%20Of%20Rhye.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_1d5e6509ede9 .
+
+<file:Queen/Greatest%20Hits%20I/15%20Seven%20Seas%20Of%20Rhye.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_af1cf8d057b2 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

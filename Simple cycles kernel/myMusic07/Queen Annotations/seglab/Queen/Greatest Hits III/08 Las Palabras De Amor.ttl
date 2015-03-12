@@ -1,0 +1,159 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_0f98834fdd46
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_b5664aa6940b
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_8fee64a07b4f ;
+    a mo:Record ;
+    foaf:maker :maker_0f98834fdd46 .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT32.309S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT32.309S"^^xsd:duration ;
+        tl:duration "PT24.046S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT56.355S"^^xsd:duration ;
+        tl:duration "PT19.23S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT1M15.585S"^^xsd:duration ;
+        tl:duration "PT23.859S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M39.444S"^^xsd:duration ;
+        tl:duration "PT23.636S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT2M3.08S"^^xsd:duration ;
+        tl:duration "PT35.263S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT2M38.343S"^^xsd:duration ;
+        tl:duration "PT26.807S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT3M5.15S"^^xsd:duration ;
+        tl:duration "PT20.63S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT3M25.78S"^^xsd:duration ;
+        tl:duration "PT10.489S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "half_refrain" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT3M36.269S"^^xsd:duration ;
+        tl:duration "PT51.621S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT4M27.89S"^^xsd:duration ;
+        tl:duration "PT1.31S"^^xsd:duration ;
+        tl:onTimeLine :timeline_25e2dfc9bb6a ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_25e2dfc9bb6a
+    a tl:Timeline .
+
+:track_8fee64a07b4f
+    dc:title "Las Palabras De Amor" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/08%20Las%20Palabras%20De%20Amor.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_0f98834fdd46 .
+
+<file:Queen/Greatest%20Hits%20III/08%20Las%20Palabras%20De%20Amor.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_25e2dfc9bb6a ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

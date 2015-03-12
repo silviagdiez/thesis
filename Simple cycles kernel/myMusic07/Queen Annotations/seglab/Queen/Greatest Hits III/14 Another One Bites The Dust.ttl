@@ -1,0 +1,179 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix ov: <http://open.vocab.org/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    ov:confidence "0.6" ;
+    ov:versionnumber "1.0" ;
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_2ca71abcc8bf
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_134825da3a34
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_8a470f71cbe4 ;
+    a mo:Record ;
+    foaf:maker :maker_2ca71abcc8bf .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.2S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.2S"^^xsd:duration ;
+        tl:duration "PT18.413S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT18.613S"^^xsd:duration ;
+        tl:duration "PT18.108S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT36.721S"^^xsd:duration ;
+        tl:duration "PT18.124S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "versea" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT54.845S"^^xsd:duration ;
+        tl:duration "PT13.577S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M8.422S"^^xsd:duration ;
+        tl:duration "PT40.766S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verseb" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M49.188S"^^xsd:duration ;
+        tl:duration "PT13.579S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT2M2.767S"^^xsd:duration ;
+        tl:duration "PT18.123S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "versea" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M20.89S"^^xsd:duration ;
+        tl:duration "PT18.122S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M39.012S"^^xsd:duration ;
+        tl:duration "PT27.171S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "versec" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT3M6.183S"^^xsd:duration ;
+        tl:duration "PT27.173S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "versed" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT3M33.356S"^^xsd:duration ;
+        tl:duration "PT47.484S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT4M20.84S"^^xsd:duration ;
+        tl:duration "PT0S"^^xsd:duration ;
+        tl:onTimeLine :timeline_870c50739754 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_870c50739754
+    a tl:Timeline .
+
+:track_8a470f71cbe4
+    dc:title "Another One Bites The Dust" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/14%20Another%20One%20Bites%20The%20Dust.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_2ca71abcc8bf .
+
+<file:Queen/Greatest%20Hits%20III/14%20Another%20One%20Bites%20The%20Dust.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_870c50739754 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+

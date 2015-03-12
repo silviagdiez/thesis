@@ -1,0 +1,176 @@
+@base <#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <> .
+@prefix af: <http://purl.org/ontology/af/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<>
+    dc:created "2009-10-20" ;
+    a foaf:Document .
+
+:maker_7cd53ed6165b
+    a mo:MusicArtist ;
+    foaf:name "Queen" .
+
+:record_8f3fb3dc7f16
+    dc:title "Greatest Hits III" ;
+    mo:release_type mo:album ;
+    mo:track :track_764a513f6714 ;
+    a mo:Record ;
+    foaf:maker :maker_7cd53ed6165b .
+
+:segment_000001
+    event:time [
+        tl:beginsAt "PT0S"^^xsd:duration ;
+        tl:duration "PT0.185S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:segment_000002
+    event:time [
+        tl:beginsAt "PT0.185S"^^xsd:duration ;
+        tl:duration "PT26.336S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "intro" .
+
+:segment_000003
+    event:time [
+        tl:beginsAt "PT26.521S"^^xsd:duration ;
+        tl:duration "PT24.624S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000004
+    event:time [
+        tl:beginsAt "PT51.145S"^^xsd:duration ;
+        tl:duration "PT12.162S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000005
+    event:time [
+        tl:beginsAt "PT1M3.307S"^^xsd:duration ;
+        tl:duration "PT24.6S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000006
+    event:time [
+        tl:beginsAt "PT1M27.907S"^^xsd:duration ;
+        tl:duration "PT12.163S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000007
+    event:time [
+        tl:beginsAt "PT1M40.07S"^^xsd:duration ;
+        tl:duration "PT16.774S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "bridge" .
+
+:segment_000008
+    event:time [
+        tl:beginsAt "PT1M56.844S"^^xsd:duration ;
+        tl:duration "PT24.479S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "verse" .
+
+:segment_000009
+    event:time [
+        tl:beginsAt "PT2M21.323S"^^xsd:duration ;
+        tl:duration "PT12.325S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000010
+    event:time [
+        tl:beginsAt "PT2M33.648S"^^xsd:duration ;
+        tl:duration "PT24.428S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "instrumental_solo" .
+
+:segment_000011
+    event:time [
+        tl:beginsAt "PT2M58.076S"^^xsd:duration ;
+        tl:duration "PT15.34S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "refrain" .
+
+:segment_000012
+    event:time [
+        tl:beginsAt "PT3M13.416S"^^xsd:duration ;
+        tl:duration "PT1M31.024S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "outro" .
+
+:segment_000013
+    event:time [
+        tl:beginsAt "PT4M44.44S"^^xsd:duration ;
+        tl:duration "PT1.333S"^^xsd:duration ;
+        tl:onTimeLine :timeline_179eade2e9d3 ;
+        a tl:Interval
+    ] ;
+    a af:StructuralSegment ;
+    rdfs:label "silence" .
+
+:timeline_179eade2e9d3
+    a tl:Timeline .
+
+:track_764a513f6714
+    dc:title "Let Me Live" ;
+    mo:available_as <file:Queen/Greatest%20Hits%20III/11%20Let%20Me%20Live.wav> ;
+    a mo:Track ;
+    foaf:maker :maker_7cd53ed6165b .
+
+<file:Queen/Greatest%20Hits%20III/11%20Let%20Me%20Live.wav>
+    mo:encodes [
+        mo:time [
+            tl:onTimeLine :timeline_179eade2e9d3 ;
+            a tl:Interval
+        ] ;
+        a mo:Signal
+    ] ;
+    a mo:AudioFile .
+
